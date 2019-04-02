@@ -13,8 +13,14 @@ natural reserve.
 
 
 
-Dataset Citation:
-----------------
+
+## Dataset Citation
+
+Almonacid,  B. (2018a). Dataset for : Resolving the optimal selection of a
+natural reserve using the particle swarm optimisation by applying transfer
+functions. [Online]. Available from: https://doi.org/10.6084/m9.figshare.6279149.v2.249
+
+
 @Misc{almonacid_2018_dataset,
 title={Dataset for: Resolving the Optimal Selection of a Natural Reserve using the Particle Swarm Optimisation by Applying Transfer Functions},
 howpublished = "[Online]. Available from: https://doi.org/10.6084/m9.figshare.6279149.v2",
@@ -26,8 +32,13 @@ year={2018},
 month={May}}
 
 
-Result Citation:
----------------
+## Result Citation
+
+Almonacid,  B. (2018b). Results for : Resolving the optimal selection of a
+natural reserve using the particle swarm optimisation by applying transfer functions.
+[Online].251Available from: https://doi.org/10.6084/m9.figshare.6279137.v2.
+
+
 @misc{almonacid_2018_results, title={Results for: Resolving the Optimal Selection of a Natural Reserve using the Particle Swarm Optimisation by Applying Transfer Functions},
 howpublished = "[Online]. Available from: https://doi.org/10.6084/m9.figshare.6279137.v2",
 url={https://figshare.com/articles/Results/6279137/2}, DOI={10.6084/m9.figshare.6279137.v2},
@@ -38,12 +49,9 @@ year={2018},
 month={May}}
 
 
-How to run
------------
+## How to run
 
 To be able to execute the different configurations of the experiment, one of the following configurations must be added in the run name file. Subsequently, the "Playible Run" button must be pressed.
-
-The run file has as an example the configuration number 1, which uses the function VShaped V1.
 
 The arguments that the .jar file supports are:
 - args [0] = VShaped type (interger value):
@@ -54,31 +62,46 @@ The arguments that the .jar file supports are:
 - args [1] = Number of iterations (integer value).
 - args [2] = Path of the data file (String value).
 
-## FOR V1 VShaped
+#### For V1 VShaped
 
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A1-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A2-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A3-20x200.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A4-20x200.json"
 
-## FOR V2 VShaped
+
+#### For V2 VShaped
 
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A1-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A2-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A3-20x200.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A4-20x200.json"
 
-## FOR V3 VShaped
+
+#### For V3 VShaped
 
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A1-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A2-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A3-20x200.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A4-20x200.json"
 
-## FOR V4 VShaped
+
+#### For V4 VShaped
 
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A1-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A2-20x100.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A3-20x200.json"
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A4-20x200.json"
 
