@@ -38,7 +38,7 @@ year={2018},
 month={May}}
 
 
-#How to run
+How to run
 -----------
 
 To be able to execute the different configurations of the experiment, one of the following configurations must be added in the run name file. Subsequently, the "Playible Run" button must be pressed.
@@ -54,26 +54,31 @@ The arguments that the .jar file supports are:
 - args [1] = Number of iterations (integer value).
 - args [2] = Path of the data file (String value).
 
-==== FOR V1 VShaped
+## FOR V1 VShaped
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A1-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A2-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A3-20x200.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 1 100 "../data/A4-20x200.json"
 
-==== FOR V2 VShaped
+## FOR V2 VShaped
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A1-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A2-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A3-20x200.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 2 100 "../data/A4-20x200.json"
 
-==== FOR V3 VShaped
+## FOR V3 VShaped
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A1-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A2-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A3-20x200.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 3 1000 "../data/A4-20x200.json"
 
-==== FOR V4 VShaped
+## FOR V4 VShaped
+
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A1-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A2-20x100.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A3-20x200.json"
 java -jar /code/JavaSE18_OSNR_PSO_VShaped/target/PSO_OSNR-1.0-SNAPSHOT-jar-with-dependencies.jar 4 1000 "../data/A4-20x200.json"
+
