@@ -54,7 +54,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Main_PSO_OSNR_Shaped_V1_Data_A1</mainClass>
+                            <mainClass>Main_PSO_OSNR</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

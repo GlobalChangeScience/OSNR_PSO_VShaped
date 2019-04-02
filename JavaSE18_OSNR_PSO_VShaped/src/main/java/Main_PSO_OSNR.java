@@ -20,12 +20,11 @@
 
 import benchmark.OSNR_Data;
 import benchmark.OSNR_FileReader;
-import org.implementation.pso_osnr.PSO_OSNR_Position;
-import org.implementation.pso_osnr.PSO_OSNR_Position_V1;
+import org.implementation.pso_osnr.*;
 import org.model.osnr.OSNR_Model;
 
 
-public class Main_PSO_OSNR_Shaped_V1_Data_A3
+public class Main_PSO_OSNR
 {
 
     public static void main(String[] args)
@@ -47,7 +46,7 @@ public class Main_PSO_OSNR_Shaped_V1_Data_A3
         OSNR_FileReader reader = new OSNR_FileReader();
 
         // Read and create the benchmark data (read one file), in a OSNR_Data class.
-        OSNR_Data data = reader.read("A3-20x200.json");
+        OSNR_Data data = reader.read(args[2]);
 
 
         // Create a Optimal Selection of a Natural Reserve Model
@@ -61,7 +60,33 @@ public class Main_PSO_OSNR_Shaped_V1_Data_A3
         System.out.println( data.toString());
 
         // Create a movement with a one VShaped.
-        PSO_OSNR_Position position_move = new PSO_OSNR_Position_V1();
+        PSO_OSNR_Position position_move = null;
+        int vshaped = Integer.parseInt(args[0]);
+        if (vshaped == 1)
+        {
+            position_move = new PSO_OSNR_Position_V1();
+            System.out.println("Config VShaped V1 in PSO");
+        }
+        else if (vshaped == 2)
+        {
+            position_move = new PSO_OSNR_Position_V2();
+            System.out.println("Config VShaped V2 in PSO");
+        }
+        else if (vshaped == 3)
+        {
+            position_move = new PSO_OSNR_Position_V3();
+            System.out.println("Config VShaped V3 in PSO");
+        }
+        else if (vshaped == 4)
+        {
+            position_move = new PSO_OSNR_Position_V4();
+            System.out.println("Config VShaped V4 in PSO");
+        }
+        else
+        {
+            System.out.println("Error in parameters");
+            System.exit(0);
+        }
 
         org.pso.ParticleSwarmOptimization pso =
                 new org.pso.ParticleSwarmOptimization(
@@ -75,7 +100,8 @@ public class Main_PSO_OSNR_Shaped_V1_Data_A3
 
 
         // Run the PSO metaheuristic.
-        pso.run(1000);
+        int iterations = Integer.parseInt(args[1]);
+        pso.run(iterations);
 
     }
 }

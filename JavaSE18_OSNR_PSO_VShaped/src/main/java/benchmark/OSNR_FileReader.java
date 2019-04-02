@@ -53,10 +53,13 @@ public class OSNR_FileReader
         try
         {
             // Get the real path in the system
-            File real_path_filename = new File(ClassLoader.getSystemResource("osnr_set_A/" + filename).getFile());
+            System.out.println(filename);
+            //File real_path_filename = new File(ClassLoader.getSystemResource(filename).getFile());
+            //System.out.println(real_path_filename);
 
             // Read the filename
-            Object obj = parser.parse(new FileReader(real_path_filename.toString()));
+            //Object obj = parser.parse(new FileReader(real_path_filename.toString()));
+            Object obj = parser.parse(new FileReader(filename));
 
             JSONObject jsonObject = (JSONObject) obj;
 
