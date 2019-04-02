@@ -1,4 +1,4 @@
-# OSNR_PSO_VShaped
+# Resolving the Optimal Selection of a Natural Reserve using the Particle Swarm Optimisation by Applying Transfer Functions
 
 The optimal selection of a natural reserve (OSNR) is an optimisation problem
 with a binary domain. To solve this problem, the metaheuristic algorithm called
