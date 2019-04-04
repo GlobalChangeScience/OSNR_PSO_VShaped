@@ -37,10 +37,10 @@ import org.model.osnr.OSNR_Velocity;
 public class Population
 {
 
-    // Population of andean condors.
+    // Population of particles.
     private ArrayList<Particle> particles;
 
-    // This variable correspond to the number of the andean condors in the particles
+    // This variable correspond to the number of the particles in the swarm
     private static int number_of_particles;
 
     // This variable is the global particle in the particles.
@@ -52,8 +52,8 @@ public class Population
 
     /**
      * Constructor.
-     * @param number_of_particles Corresponds to the number of Andean condors in
-     *                                 the population of condors.
+     * @param number_of_particles Corresponds to the number of particles in
+     *                                 the swarm.
      * @param osnr_model A OSNR model.
      */
     public Population(int number_of_particles,
