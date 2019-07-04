@@ -12,7 +12,22 @@ transfer functions are apt to solve the problem of optimal selection of a
 natural reserve.
 
 
+## Source Code Citation
 
+Almonacid, Boris. (2019, June 29). Source Code: Resolving the Optimal Selection
+of a Natural Reserve using the Particle Swarm Optimisation by Applying Transfer
+Functions (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.3262335
+
+@misc{almonacid_boris_2019_3262335,
+  author       = {Almonacid, Boris},
+  title        = {{Source Code: Resolving the Optimal Selection of a 
+                   Natural Reserve using the Particle Swarm
+                   Optimisation by Applying Transfer Functions}},
+  month        = jun,
+  year         = 2019,
+  doi          = {10.5281/zenodo.3262335},
+  url          = {https://doi.org/10.5281/zenodo.3262335}
+}
 
 ## Dataset Citation
 
